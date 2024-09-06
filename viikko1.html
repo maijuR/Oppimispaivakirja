@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!--Jokaisen HTMl tiedoston pitää alkaa DOctype-elementillä-->
+<!--HTML elementti on HTML dokumentin juurielementti-->
+<html lang="fi"><!-- atrribuutti kertoo selaimelle, että dokumentissa on suomi kielenä-->
+    <!--muista lisätä head ja body-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Viikko X - Oppimispäiväkirja</title>
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+    <!--määrittelee tausta värin-->
+    <!--css jutut tulee aina stylen sisään-->
+    <!--display block-elementti muuttaa kuvan niin että ne asettelee sivulle kuin tekstin eikä inline-elementtinä-->
+    <style> 
+      body {
+        background-color: rgb(154, 154, 63);
+        width:100%;
+        max-width: 100%;
+      }
+
+      p {
+      width: 50%;
+      margin-left:10%
+      }
+    /*kommentti javascriptille*/
+      img {
+    
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .inline-text-img{
+        display:inline;
+      }
+      
+
+    .background1 {
+        background: linear-gradient(salmon, lightblue, salmon);
+        padding: 10 px;
+    }
+
+    .background2 {
+        background:yellow;
+        padding: 50 px
+    }
+
+    #meitsionuniikkiid {background-color: lightblue;}
+    </style>
+</head>
+<!--body tägin sisällä on kaikki mitkä näkyy sivulla-->
+<body>
+    <!--div on yleiselementti, mitä voi käyttää mihin vaan?-->
+    <div class="background1">
+     <h1>Viikko 1: Oppimispäiväkirja</h1>
+     <h5>5 alaotsikko</h5>
+     <!--p oon paragraph ja ne tekee automaattisesti tyhjän rivin-->
+     <p>
+      Lataa koodiesimerkkejä varten tehty komponentti <a href="./assets/components/html-css-viewer.js">täältä</a> ja fontti <a href="./assets/fonts/FontWithASyntaxHighlighter-Regular.woff2">täältä</a>
+      <!--jos kirjoittaa linkki a tägin sisään niin siihen sanaan tulee linkki-->
+      <!-- b -tägi on boldattu ja br on rivinvaihto ja sitä ei tarvi sulkea-->
+
+      <p>Lisää jokaiseen tiedostoon myös vähintään yksi koodisnippet, jonka joku muu ryhmäläisistä voi copy&pasteta omaan projektiinsa. Se voi olla esim. tyylitelty otsikko, CSS-liukuväri tai jokin muu oivallus. Käy samalla selailemassa muiden päiväkirjoja ja katso minkälaisia koodisnippettejä he ovat jakaneet. </p>
+     </p>
+    </div>
+    <!--image kuvaan laitetaan class attribuutti jotta css osaa tunnistaa kuvan-->
+    <img class="inline-text-img" src="./assets/img/koe1.png">
+    <!-- kuvaa varten pitää kirjoittaa tiedosto polku mistä kuva löytyy-->
+    <img class="inline-text-img-2" src= "./assets/img/koe2.png">
+
+    <button>nappilainen</button>
+    <div class="background2" id="meitsionuniikkiid">
+    <h2>Tällä viikolla opin:</h2>
+    <ul>
+        <li>
+          Sivujen (esimerkiksi tämän sivun) lähdekoodin voi nähdä esim. kirjoittamalla <code>view-source:</code> sivun URLin alkuun.
+        </li>
+        <li>[Asia 2]</li>
+        <li>[Asia 3]</li>
+    </ul>
+
+    <ul>
+        <li>H1-H6 otsikot
+        <li> p tägi on leipätekstille
+        <li> img tägi on kuville
+    </ul>
+    
+    <ol>
+    <h3> mun lenpi HTML elementit</h3>
+    <li>h1 elementti</li>
+    <li>img elementti</li>
+
+    </ol>
+    </div>
+    Tässä on koodiesimerkki:
+    <html-css-viewer preview>
+      <template>
+        <style>
+          .example { 
+            color: red; 
+          }
+        </style>
+        <div class="example">
+          Hei, maailma!
+        </div>
+      </template>
+    </html-css-viewer>
+    
+    <h2>Reflektio:</h2>
+    <p>[Reflektoi oppimaasi, sekä pohdi viikon aikana käsiteltyjä asioita]</p>
+    
+    <nav>
+        <a href="viikkoX-1.html">← Edellinen viikko</a> |
+        <a href="viikkoX+1.html">Seuraava viikko →</a>
+    </nav>
+</body>
+</html>
+<!--muista sulkea html tägi-->
