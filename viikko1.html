@@ -6,114 +6,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Viikko X - Oppimispäiväkirja</title>
+    <title>Viikko 1 - Oppimispäiväkirja</title>
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
     <!--määrittelee tausta värin-->
     <!--css jutut tulee aina stylen sisään-->
     <!--display block-elementti muuttaa kuvan niin että ne asettelee sivulle kuin tekstin eikä inline-elementtinä-->
+
     <style> 
-      body {
-        background-color: rgb(154, 154, 63);
+      body 
+      {
+        background-color: rgb(11, 4, 36);
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, rgb(130, 156, 71) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(130, 156, 71) 1px, transparent 1px);
         width:100%;
         max-width: 100%;
+        font-family: Bahnschrift; color:aliceblue;
+        
       }
 
       p {
-      width: 50%;
-      margin-left:10%
+      width: 80%;
+      margin-left:2%
       }
     /*kommentti javascriptille*/
       img {
-    
         display: block;
-        width: 60%;
-        margin: 0 auto;
-        max-width: 100%;
+        width: 40%;
+        margin-left:30px;
+        max-width: 40%;
       }
 
-      .inline-text-img{
+     /*--> .inline-text-img-2{
         display:inline;
-      }
+      }*/
       
 
-    .background1 {
-        background: linear-gradient(salmon, lightblue, salmon);
-        padding: 10 px;
+    .background1 
+    {
+      background-color: rgb(11, 4, 36);
+      padding: 5px;
     }
 
     .background2 {
-        background:yellow;
-        padding: 50 px
+      background-color: rgb(11, 4, 36);
+        padding: 40px;
     }
 
-    #meitsionuniikkiid {background-color: lightblue;}
+    /*#meitsionuniikkiid {background-color: lightblue;}*/
+
     </style>
+
 </head>
 <!--body tägin sisällä on kaikki mitkä näkyy sivulla-->
+
 <body>
-    <!--div on yleiselementti, mitä voi käyttää mihin vaan?-->
+
+<!--div on yleiselementti, mitä voi käyttää mihin vaan?-->
     <div class="background1">
-     <h1>Viikko 1: Oppimispäiväkirja</h1>
-     <h5>5 alaotsikko</h5>
+     <h1>OPPIMISPÄIVÄKIRJA VIIKKO 1</h1>
+    </div>
+    <br>
+    <br>
+    <br>
      <!--p oon paragraph ja ne tekee automaattisesti tyhjän rivin-->
+     <div class="background2">
      <p>
-      Lataa koodiesimerkkejä varten tehty komponentti <a href="./assets/components/html-css-viewer.js">täältä</a> ja fontti <a href="./assets/fonts/FontWithASyntaxHighlighter-Regular.woff2">täältä</a>
+      Ensimmäisellä viikolla tutustuimme HTML-koodaamiseen ja hieman CSS:ään. Keskustelimme tunneilla mm. tietokoneista, servereistä ja internetistä. Puhuimme myös omasta internetin käytöstämme. 
+     </p>
+     <p>
+      Tarkastelimme Inspect-työkalulla nettisivujen koodia ja oli kiinnostava päästä "muokkaamaan" sen avulla sivustoja. Oli hyödyllistä alustavasti alkaa ymmärtämään erilaisia elementtejä, joista nettisivut koostuvat. Alla olevat kuvakaappaukset ovat helmet-sivustolta Inspect-työkalu-modauksen jälkeen.
+    </p>
+  </div>
+      <br>
+      <br>
+         <!--image kuvaan laitetaan class attribuutti jotta css osaa tunnistaa kuvan-->
+    <img class="inline-text-img-2" src="./assets/img/helmet1.png">
+    <!-- kuvaa varten pitää kirjoittaa tiedosto polku mistä kuva löytyy-->
+    <img class="inline-text-img-2" src= "./assets/img/helmet2.png">
+      <br>
+
       <!--jos kirjoittaa linkki a tägin sisään niin siihen sanaan tulee linkki-->
       <!-- b -tägi on boldattu ja br on rivinvaihto ja sitä ei tarvi sulkea-->
-
-      <p>Lisää jokaiseen tiedostoon myös vähintään yksi koodisnippet, jonka joku muu ryhmäläisistä voi copy&pasteta omaan projektiinsa. Se voi olla esim. tyylitelty otsikko, CSS-liukuväri tai jokin muu oivallus. Käy samalla selailemassa muiden päiväkirjoja ja katso minkälaisia koodisnippettejä he ovat jakaneet. </p>
-     </p>
-    </div>
-    <!--image kuvaan laitetaan class attribuutti jotta css osaa tunnistaa kuvan-->
-    <img class="inline-text-img" src="./assets/img/koe1.png">
-    <!-- kuvaa varten pitää kirjoittaa tiedosto polku mistä kuva löytyy-->
-    <img class="inline-text-img-2" src= "./assets/img/koe2.png">
-
-    <button>nappilainen</button>
-    <div class="background2" id="meitsionuniikkiid">
-    <h2>Tällä viikolla opin:</h2>
-    <ul>
-        <li>
-          Sivujen (esimerkiksi tämän sivun) lähdekoodin voi nähdä esim. kirjoittamalla <code>view-source:</code> sivun URLin alkuun.
-        </li>
-        <li>[Asia 2]</li>
-        <li>[Asia 3]</li>
-    </ul>
-
-    <ul>
-        <li>H1-H6 otsikot
-        <li> p tägi on leipätekstille
-        <li> img tägi on kuville
-    </ul>
     
-    <ol>
-    <h3> mun lenpi HTML elementit</h3>
-    <li>h1 elementti</li>
-    <li>img elementti</li>
+  
+    <!--<div class="background2" id="meitsionuniikkiid"> -->
+      <div class="background2">
+    <h2>Tehtävä 2 edistyminen</h2>
+    <p>
+     Ensimmäisellä viikolla hyödyllistä oli alkaa kokeilemaan erilaisia asioita HTML:ssä ja CSS:ssä. Aloin myös miettimään Tehtävän 2 aihettani. Selasin mm. Internet Archive-sivustoa. Aiheen valinta oli hankalaa - minun oli vaikea keksiä hakusanoja ja miettiä aiheita, jotka kiinnostavisivat. Huomaan, että olen kirjoittamisessa ruosteessa. Koodilla testailu on mukavaa, mutta kirjoittaminen on hankalaa. Toivon, että oppimispäiväkirjan tekeminen helpottuu kurssin edetessä, kun siihen tulee enemmän rutiinia. 
+     </p>
 
-    </ol>
-    </div>
-    Tässä on koodiesimerkki:
+    <ul>
+        <li>Tutustuin erilaisiin arkistomateriaaleihin </li>
+        <li>Aloin pohtimaan, mitä aihetta haluaisin tehtävässä käsitellä</li>
+    </ul>
+  </div>
+  <br> 
+  <br>
+  <br>
+  <div class="background2">
+    <h4>Tässä on koodiesimerkki:</h4>
+    
     <html-css-viewer preview>
       <template>
         <style>
-          .example { 
-            color: red; 
-          }
+  body {
+    background-size: 40px 40px;
+    background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+    }
         </style>
-        <div class="example">
-          Hei, maailma!
-        </div>
+        <p>En saanut esimerkkiä toimimaan tässä, mutta tuon alla olevan voi kopioida style-osioon ja taustasta saa ruudukkomaisen. Väriä ja kokoa pystyy vaihtamaan.</p>
       </template>
     </html-css-viewer>
     
-    <h2>Reflektio:</h2>
-    <p>[Reflektoi oppimaasi, sekä pohdi viikon aikana käsiteltyjä asioita]</p>
-    
+    <br>
     <nav>
-        <a href="viikkoX-1.html">← Edellinen viikko testi</a> |
-        <a href="viikkoX+1.html">Seuraava viikko →</a>
+        <a href="viikko2.html">Seuraava viikko →</a>
     </nav>
+  </div>
 </body>
 </html>
 <!--muista sulkea html tägi-->
