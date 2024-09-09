@@ -4,7 +4,7 @@
     <!--muista lisätä head ja body-->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Viikko 1 - Oppimispäiväkirja</title>
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
@@ -16,10 +16,10 @@
       body 
       {
         background-color: rgb(11, 4, 36);
-  background-size: 20px 20px;
-  background-image:
-    linear-gradient(to right, rgb(130, 156, 71) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(130, 156, 71) 1px, transparent 1px);
+        background-size: 20px 20px;
+        background-image:
+         linear-gradient(to right, rgb(130, 156, 71) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(130, 156, 71) 1px, transparent 1px);
         width:100%;
         max-width: 100%;
         font-family: Bahnschrift; color:aliceblue;
@@ -30,7 +30,7 @@
       width: 80%;
       margin-left:2%
       }
-    /*kommentti javascriptille*/
+    /*kommentti javascriptille
       img {
         display: block;
         width: 40%;
@@ -38,10 +38,11 @@
         max-width: 40%;
       }
 
-     /*--> .inline-text-img-2{
+      .inline-text-img-3{
         display:inline;
+        margin-left:100px;
       }*/
-      
+    
 
     .background1 
     {
@@ -51,7 +52,19 @@
 
     .background2 {
       background-color: rgb(11, 4, 36);
-        padding: 40px;
+      padding: 40px;
+    }
+
+    .column {
+    float: left;
+    width: 40%;
+    padding: 5px;
+    }
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
     }
 
     /*#meitsionuniikkiid {background-color: lightblue;}*/
@@ -73,29 +86,40 @@
      <!--p oon paragraph ja ne tekee automaattisesti tyhjän rivin-->
      <div class="background2">
      <p>
-      Ensimmäisellä viikolla tutustuimme HTML-koodaamiseen ja hieman CSS:ään. Keskustelimme tunneilla mm. tietokoneista, servereistä ja internetistä. Puhuimme myös omasta internetin käytöstämme. 
+      Aion oppimispäiväkirjassani keskittyä enemmän kurssin projektien edistymisen dokumentointiin. Yritän myös lähestyä oppimispäiväkirjaa tavalla, joka olisi minulle edes jollain tavalla hyödyllinen - ja tämän vuoksi voi olla, että oppimispäiväkirjan muoto muuttuu kurssin edetessä.  
+    </p>
+    <p>
+      Kurssin ensimmäisellä viikolla hyödyllistä minulle oli, kun perjantaina aloimme kokeilemaan HTML-koodaamista ja hieman CSS:ää. Päivä meni nopeasti, kun tutustuimme eri elementteihin ja tägeihin. On mielekästä testailla eri koodin pätkiä ja yrittää saada nettisivu näyttämään siltä, miltä haluaisi. Opettelen vielä oikeita termejä, joten voi olla että käytän niitä vielä väärin. Haastavaa ensimmäisellä viikolla oli joidenkin abstrakteilta-tuntuvien käsitteiden sisäistäminen. Opetushetkenä tuntui, että ymmärsin, mikä serveri on ja miten tietokone toimii ja mikä on internet-protokolla. Mutta päivän päätteeksi, kun yritin palauttaa käsitteet mieleeni uudestaan, huomasin miten abstrakteilta ja kaukaisilta ne jälleen tuntuivat. Hyödyllistä ehkä olikin yrittää tämän tapahtuessa aina palauttaa mieleeni ajatus siitä, että mainitsemani asiat eivät ole abstrakteja, vaan putkista, huoneista ja lasereista ja numeroista koostuvia “oikeita asioita”. 
      </p>
      <p>
-      Tarkastelimme Inspect-työkalulla nettisivujen koodia ja oli kiinnostava päästä "muokkaamaan" sen avulla sivustoja. Oli hyödyllistä alustavasti alkaa ymmärtämään erilaisia elementtejä, joista nettisivut koostuvat. Alla olevat kuvakaappaukset ovat helmet-sivustolta Inspect-työkalu-modauksen jälkeen.
+      Kiinnostavaa ensimmäisellä viikolla oli myös kun, tarkastelimme Inspect-työkalulla nettisivujen koodia - oli havainnollistavaa päästä "muokkaamaan" sen avulla sivustoja. Oli hyödyllistä alustavasti alkaa ymmärtämään erilaisia elementtejä, joista nettisivut koostuvat. Alla olevat kuvakaappaukset ovat Helmet-sivustolta Inspect-työkalu-modauksen jälkeen. 
     </p>
   </div>
       <br>
       <br>
-         <!--image kuvaan laitetaan class attribuutti jotta css osaa tunnistaa kuvan-->
-    <img class="inline-text-img-2" src="./assets/img/helmet1.png">
-    <!-- kuvaa varten pitää kirjoittaa tiedosto polku mistä kuva löytyy-->
-    <img class="inline-text-img-2" src= "./assets/img/helmet2.png">
-      <br>
+         <!--image kuvaan laitetaan class attribuutti jotta css osaa tunnistaa kuvan
+    <img class="inline-text-img-2" alt="kuvakaappaus helmet sivustolta, joka näyttää oudolta, koska sivua on muokattu inspect-työkalulla" src="./assets/img/helmet1.png">
+    kuvaa varten pitää kirjoittaa tiedosto polku mistä kuva löytyy
+    <img class="inline-text-img-3" alt="kuvakaappaus helmet sivustolta, joka näyttää oudolta, koska sivua on muokattu inspect-työkalulla" src="./assets/img/helmet2.png">
+      <br> -->
 
       <!--jos kirjoittaa linkki a tägin sisään niin siihen sanaan tulee linkki-->
       <!-- b -tägi on boldattu ja br on rivinvaihto ja sitä ei tarvi sulkea-->
     
-  
+      <div class="row">
+        <div class="column">
+          <img src="./assets/img/helmet1.png" alt="kuvakaappaus helmet sivustolta, joka näyttää oudolta, koska sivua on muokattu inspect-työkalulla" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="./assets/img/helmet2.png" alt="kuvakaappaus helmet sivustolta, joka näyttää oudolta, koska sivua on muokattu inspect-työkalulla" style="width:100%">
+        </div>
+      </div>
+      
     <!--<div class="background2" id="meitsionuniikkiid"> -->
-      <div class="background2">
-    <h2>Tehtävä 2 edistyminen</h2>
+    <div class="background2">
+    <h2>Tehtävä 2</h2>
     <p>
-     Ensimmäisellä viikolla hyödyllistä oli alkaa kokeilemaan erilaisia asioita HTML:ssä ja CSS:ssä. Aloin myös miettimään Tehtävän 2 aihettani. Selasin mm. Internet Archive-sivustoa. Aiheen valinta oli hankalaa - minun oli vaikea keksiä hakusanoja ja miettiä aiheita, jotka kiinnostavisivat. Huomaan, että olen kirjoittamisessa ruosteessa. Koodilla testailu on mukavaa, mutta kirjoittaminen on hankalaa. Toivon, että oppimispäiväkirjan tekeminen helpottuu kurssin edetessä, kun siihen tulee enemmän rutiinia. 
+     Aloin myös miettimään alustavasti Tehtävän 2 aihettani. Selasin mm. Internet Archive-sivustoa sekä joidenkin museoiden arkistoja, joissa oli kiinnostavia artikkeleita. Aiheen valinta on kuitenkin hankalaa - minun oli vaikea keksiä hakusanoja ja miettiä aiheita, jotka kiinnostaisivat ja sopisivat tehtävään. Jatkan arkistojen tutkimista tällä viikolla. Oppimispäiväkirjan koodia luodessani, saan myös hyvää harjoitusta tehtävää varten. Tuntuu, että tägejä on paljon ja koodini on nyt liian sekavaa - mutta jostain on aloitettava.
      </p>
 
     <ul>
