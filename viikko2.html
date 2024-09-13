@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Viikko 2 - Oppimispäiväkirja</title>
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+
+    <style> 
+      body 
+      {
+        width:100%;
+        max-width: 100%;
+        margin: 0%;
+        animation: kradientti 5s linear infinite;
+        animation-direction: alternate-reverse;
+        font-family: Arial, Helvetica, sans-serif; color:aliceblue;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .otsikko_alku
+      {
+        padding: 20px;
+        width: 100%;
+        overflow: hidden;
+        font-family: Neurochrome; color:aliceblue;
+        
+      }
+
+      @keyframes kradientti
+      {
+        0% {background-color: rgb(5, 5, 5);}
+        50% {background-color: rgb(5, 55, 50);}
+        100% {background-color: rgb(0, 0, 0);}
+      }
+
+      h1 
+      {
+        font-size: 4vw;
+        text-wrap: nowrap;
+      }
+
+      .animaatio 
+      {
+        transform:translateX(0px);
+        animation: liikkuminen 7s infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes liikkuminen 
+      {
+        from {transform:translateX(-100%);}
+        to {transform:translateX(100%);}
+      }
+
+      .pyoristetty_laatikko 
+        {
+        border-radius: 25px;
+        border: 5px solid #73AD21;
+        padding: 20px;
+        margin: 10%;
+        }
+
+      .kuvat
+        {
+        border-radius: 5px;
+        border: 5px solid #73AD21;
+        padding: 20px;
+        margin: 10%;
+        }
+
+      .koodiesimerkki
+      {
+        border-radius: 25px;
+        border: 5px solid #73AD21;
+        padding: 20px;
+        margin: 10%;
+      }
+
+      nav
+      {
+      margin: 1%;
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+
+    </style>
+
+<body>
+    <div class= "otsikko_alku">
+    <div class="animaatio">
+    <h1>OPPIMISPÄIVÄKIRJA VIIKKO 2</h1>
+    </div>
+    </div>
+
+    <div class="pyoristetty_laatikko">
+      <p> 
+        Tällä viikolla tutustuimme lisää CSS:n ominaisuuksiin. Kävimme läpi mm.  
+      </p>
+      <ul>
+        <li>
+          <strong>Box-model:</strong> Määrittää, miten elementti vie tilaa, koostuen sisällöstä, reunuksesta (border), marginaaleista (margin) ja täytteestä (padding).
+        </li>
+        <br>
+        <li> <strong>Cascade:</strong> CSS-sääntöjen päällekkäisyys. Eli elementtiin voi vaikuttaa monta "sääntöä", mutta tietyt säännöt voittavat muiden yli. 
+        </li>
+        <br>
+        <li> <strong>Inheritance:</strong> Ominaisuudet, kuten värit ja fontit, periytyvät "vanhemmilta" "lapsille", ellei toisin määrätä. Lapsi-elementti on vanhempi-elementin sisällä. 
+        </li>
+        <br>
+        <li> <strong>Specificity:</strong> Sääntöjen tarkkuusjärjestys, joka määrittää, mitkä tyylit voittavat ristiriitatilanteissa (esim. Id ovat vahvempia kuin class (huom! Id:tä ei suositella käytettävän)).
+         </li>
+    </ul>
+    </div>
+
+    <div class="pyoristetty_laatikko">
+      <p>
+        Edistin tehtävää 2 tällä viikolla etsimällä materiaalia sekä kirkastamalla sivun ideaa. Oli yllättävän haastavaa löytää julkaistuja-teoksia, jotka olivat public domainia ja aiheesta, joka tuntui kiinnostavalta ja tehtävään sopivalta. Erilaisissa kokoelmissa ja Internet Archivessa oli paljon materiaalia, mitä selata - ja aikaa kului etsimiseen paljon. Tuntui, että oli myös haastavaa selventää itselleni, mitkä aiheet kiinnostaisivat ja sopisivat - epäilin että ideani eivät ole tarpeeksi oivaltavia, outoja tai kokeellisia. Lopulta päätin edetä avaruus-ideoideni kanssa. Tähän liittyvä materiaali kiinnosti minua ja ajattelin, että se tarjoaisi mahdollisuuksia kokeelliseen asioiden yhdistelemiseen. Ajattelin myös, että voisin ehkä hyödyntää parallax-efektiä tai elementtien skaalausta ideoissani. Avaruus ja planeetat eivät ole ehkä ideana kovinkaan outoja, mutta ajattelin että kokeellisuus astuu kuvaan ehkä koodaamisen testailussa ja opettelussa. Ajattelin myös kokeilla lähestymistapaa, jossa en suunnittele sivustoa liian pitkälle, kuten neuvottiin, jotta kokeellisuudelle on tarpeeksi tilaa tekemisessä. 
+        <br>
+        <br>
+        Etsin myös neocities-sivustoilta ja muutenkin netistä inspiraatiota eri elementteihin. Tätä täytyy vielä jatkaa lisää. 
+        <br>
+        Tässä on pari sivua:  
+        <ul>
+          <li>
+            <a href="https://www.digitization.wiki/">digitization.wiki</a>
+           (kiinnostavia elementtejä, kuten pyörivä teksti ja hohkaava fontti) 
+          </li>
+          <li>
+            <a href="https://textures.neocities.org/tex/fabric">textures.neocities.org/tex/fabric</a>
+           (hienoja tekstuureja ja pyörivä pallo)
+          </li>
+        </ul> 
+      </p>
+
+      <p>
+       Kävimme läpi myös css:llä animointi, mikä oli kiinnostavaa. Harjoittelin tätä oppimispäiväkirjassani. Tuntuu, että alan ymmärtää vähän paremmin koodin-logiikkaa. Yritin panostaa tällä viikolla myös koodin selkeyteen ja sisennyksiin, mutta se vaatii vielä harjoittelua.
+       <br>
+       <br>
+       Ensiviikolla alan koodaamaan 2. tehtävän sivustoa ja testailemaan erilaisia elementtejä.
+      </p>
+    </div>
+
+
+    <div class="kuvat">
+        <img src="./assets/img/moodboard1.png" alt="kuva, jossa monta erilaista kuvaa koottuna moodboardiksi" style="width:60%">
+
+        <img src="./assets/img/moodboard2.png" alt="kuva, jossa monta erilaista kuvaa koottuna moodboardiksi" style="width:60%">
+
+        <p>
+        Nämä ovat screenshotteja moodboardistani. Kokosin tähän kuvia, jotka löysin 2. tehtävää varten.
+        </p>
+
+    </div>
+
+    <div class="koodiesimerkki">
+    <h4>Tässä on koodiesimerkki:</h4>
+    
+    <html-css-viewer preview>
+      <template>
+        <style>
+          .pyoristetty_laatikko 
+          {
+          border-radius: 25px;
+          border: 5px solid #73AD21;
+          padding: 20px;
+          margin: 10%;
+          }
+        </style>
+        <p>
+          <div class="pyoristetty_laatikko">
+            Tässä on koodi pyöristettyä laatikkoa varten
+          </div>
+        </p>
+      </template>
+    </html-css-viewer>
+    </body>
+  </div>
+ 
+
+    <nav>
+      <a href="viikko1.html">← Edellinen viikko</a> |
+      <a href="viikko3.html">Seuraava viikko →</a>
+    </nav>
+    
+
+</body>
+</head>
