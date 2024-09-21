@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Oppimispäiväkirja - viikko 3</title>
+  <script type="module" src="./assets/components/html-css-viewer.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    html, body {
+      height:100%;
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(248, 255, 175);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .wrapper {
+      display:grid;
+      grid-template-areas:
+        "nav nav"
+        "main aside"
+        "footer footer"
+      ;
+      grid-template-columns: 1fr 400px;
+      grid-template-rows: auto 1fr auto;
+      height:100%;
+    }
+    header {
+      grid-area: nav;
+      background: rgb(92,0,0);
+      background: linear-gradient(156deg, rgba(92,0,0,1) 0%, rgba(116,99,168,1) 54%, rgba(192,49,49,1) 100%);
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      padding:10px;
+      color: #fff;
+    }
+    .otsikko {
+        font-family: Misto;
+        font-size: 2em;
+        margin-left: 30px;
+        text-shadow: 0 0 10px #eeefb3, 0 0 90px #b49e6d, 0 0 30px #610606, 0 0 40px #410606, 0 0 90px #000000;
+    }
+    ul {
+      display:flex;
+      list-style:none;
+      padding:0;
+      margin:0;
+      gap:10px;
+    }
+    ul li {
+      outline:4px solid rgb(239, 239, 174);
+      padding:10px;
+      margin: 10px;
+      border-radius: 5%;
+    }
+    main {
+      grid-area: main;
+      background: rgb(92,0,0);
+      background: linear-gradient(63deg, rgba(92,0,0,1) 0%, rgba(175,60,76,1) 0%, rgba(116,99,168,1) 73%, rgba(124,94,155,1) 80%, rgba(192,49,49,1) 100%); 
+    }
+    aside {
+      grid-area:aside;
+      padding: 10px;
+      background:linear-gradient(63deg, rgba(92,0,0,1) 0%, rgba(175,60,76,1) 0%, rgba(116,99,168,1) 73%, rgba(124,94,155,1) 80%, rgba(192,49,49,1) 100%);
+    }
+  
+    footer {
+      grid-area: footer;
+      background: rgb(92,0,0);
+      background: linear-gradient(63deg, rgba(92,0,0,1) 0%, rgba(175,60,76,1) 0%, rgba(116,99,168,1) 73%, rgba(124,94,155,1) 80%, rgba(192,49,49,1) 100%); 
+    }
+    footer nav {
+      margin: 4%;
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: blanchedalmond;
+    }
+
+    .link { color: #e0e3a0; }
+    a { color: #e0e3a0; }
+
+    .ruudukko {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .ruudukko .featured {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 30px;
+    }
+    .ruudukko .featured2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 30px;
+    }
+    .koodiesimerkki {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      margin: 30px;
+    }
+    .ruudukko div {
+      border:10px groove rgb(77, 6, 6);
+      border-radius:2px;
+      padding:10px;
+      display:grid;
+      place-content:center;
+      background: rgb(92,0,0);
+      background: linear-gradient(156deg, rgba(92,0,0,1) 0%, rgba(116,99,168,1) 54%, rgba(192,49,49,1) 100%);
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="otsikko">
+      <h1>
+        VIIKKO 3
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li> <a href="#koodaus">Koodaus</a></li>
+        <li><a href="#flexbox">Flexbox</a></li>
+        <li><a href="#Grid">Grid</a></li>
+        <li><a href="#tehtava">Tehtävän edistäminen</a></li>
+        <li><a href="#koodi">Koodi esimerkki</a></li>
+      </ul> 
+    </nav>
+  </header>
+  <main>
+    <div class="ruudukko">
+      <div class="featured">
+            <h1>
+              <a id="Koodaus">Koodaus</a>
+            </h1> 
+            <p>
+                Tällä viikolla opimme myös uusia tekniikoita koodaamiseen, erityisesti Flexboxia ja Gridiä. Näiden avulla voi tehdä monimutkaisempia ja joustavampia verkkosivujen asetteluja. Flexbox oli hyödyllinen erityisesti silloin, kun halutaan asettaa pienempiä elementtejä vierekkäin. Se luo kaksi akselia, ja elementit asetetaan näille akseleille eri sääntöjen mukaisesti, mikä antaa paljon liikkumavaraa asetteluun. Gridin avulla taas voi luoda ruudukon, johon elementtejä voidaan asetella tarkasti ja systemaattisesti.
+            </p>
+            <h2>
+              <a id="flexbox">Flexbox</a> 
+            </h2>
+            <ul>
+                <li>
+                    <h4>
+                        Kaksi akselia:
+                    </h4>
+                    Flexboxissa on kaksi akselia: main axis ja cross axis. Elementit sijoitetaan näiden akseleiden mukaan.
+                </li>
+                <li>
+                    <h4>
+                        Flex container ja flex items:
+                    </h4>
+                    Flexbox toimii "säiliönä", johon sijoitetaan joustavat elementit. Määritellään display: flex; -säännöllä.
+                </li>
+                <li>
+                    <h4>
+                        Justify-content:
+                    </h4>
+                     Asettaa elementit vaakasuunnassa pääakselille (esim. keskelle, vasemmalle, oikealle). 
+                </li>
+                <li>
+                    <h4>
+                        Align-items:
+                    </h4>
+                     Kohdistaa elementit pystysuunnassa cross akselille. 
+                </li>
+                <li>
+                    <h4>
+                        Flex-direction:
+                    </h4>
+                     Määrittää pääakselin suunnan (vaaka- tai pystysuuntainen). 
+                </li>
+                <li>
+                    <h4>
+                        Flex-wrap:
+                    </h4>
+                     Sallii elementtien "kääriytymisen" usealle riville, jos ne eivät mahdu yhdelle riville.
+                </li>
+            </ul>
+            <h2>
+              <a id="Grid">Grid</a>
+            </h2>
+            <ul>
+                <li>
+                    Ruudukkoasettelu: Gridissä luodaan ruudukko,  johon elementit asetetaan riveinä ja sarakkeina.
+                </li>
+                <li>
+                    Grid container ja grid items: Samoin kuin Flexboxissa, Gridillä on säiliö ja sen sisällä olevat elementit. Määritellään display: grid; -säännöllä. 
+                </li>
+                <li>
+                    grid-template-columns ja grid-template-rows: Määrittävät sarakkeiden ja rivien määrän sekä niiden leveyden ja korkeuden. 
+                </li>
+                <li>
+                    justify-items ja align-items: Kohdistavat elementit ruudukossa (esim. keskelle). 
+                </li>
+                <li>
+                    grid-area: Voit määritellä elementin sijoittamisen usean ruudukon alueelle.
+                </li>
+                <li>
+                    grid-gap (tai gap): Asettaa välin rivien ja sarakkeiden välille. 
+                </li>
+            </ul>     
+            <p>
+                Lisäksi opimme lisää animaatioista ja siitä, miten HTML-koodiin voi linkittää ulkoisia tiedostoja, kuten tyylitiedostoja eli “stylesheets” tai ulkoisia linkkejä. Yritin harjoitella joitain tämän viikon asioita oppimispäiväkirjassani, kuten flexboxia, gridiä ja sisäisiälinkkejä.
+            </p>
+      </div>
+
+      <div class="featured2">
+            <h1>
+              <a id="tehtava">Tehtävän edistäminen</a> 
+            </h1>
+
+            <p>
+                Tällä viikolla edistin projektiani etsimällä tietoa aiheestani ja hakemalla inspiraatiota. Tämä auttoi minua kirkastamaan ideaani edelleen.  Kiinnostuin Goldilocks eli "kultakutri" -alueesta, joka kuvaa elämän mahdollistavien olosuhteiden syntymistä planeetalla. Tämä käsite tuntui kiinnostavalta, koska se yhdistää monia tärkeitä tieteellisiä ja filosofisia kysymyksiä elämän edellytyksistä ja planeetan asuttavuudesta. Aloin pohtimaan miten idean voisi sisällyttää sivustooni tarpeeksi yksinkertaisella tavalla. 
+            </p>
+            <p>
+                Kun ideani oli selkeytynyt, aloin työstämään projektini sisältöä. Sain inspiraation kuvata planeettoja  puurolautasina. Otin valokuvia puurolautasista, joita sitten muokkasin Photoshopissa, muuttamalla niiden värejä niin, että ne muistuttaisivat planeettoja. Oli mukava kokeilla erilaisia asioita ja testailla. 
+                </p>
+            <p>
+                Seuraavaksi yhdistin elementtejä (eli puuroplaneetat ja arkistojen avaruus kuvia sekä arkistojen karhu kuvia) Illustratorissa, jotta voisin hahmottaa paremmin kokonaisuuden visuaalisuutta. Illustratorin käyttö auttoi minua alustavasti pohtimaan ulkoasua ja leiskaratkaisua. Tämän jälkeen tein testikokeilua koodissa, mutta se oli yllättävän haastavaa. Sain lopulta kuitenkin jonkinlaisen ensimmäisen testin tehtyä. Huomaan, että ideani muotoutuu lisää, kun edistän tehtävää ja saan uusia ideoita. Yritän antaa tälle tilaa ja seurata inspiraatiotani.
+            </p>  
+        </div>
+        <div class="koodiesimerkki">
+          <h4>
+            <a id="koodi">Koodi esimerkki</a>
+          </h4> 
+          <html-css-viewer preview>
+            <template>
+              <style>
+                .hohtava {
+                font-family: Misto;
+                font-size: 2em;
+                margin-left: 30px;
+                text-shadow: 0 0 10px #eeefb3, 0 0 90px #b49e6d, 0 0 30px #610606, 0 0 40px #410606, 0 0 90px #000000;
+                }
+              </style>
+              <p>
+                <div class="hohtava">
+                  Tässä on koodi hohtavaa tekstiä varten.
+                </div>
+              </p>
+            </template>
+          </html-css-viewer>
+          </body>
+        </div>
+
+    </div>
+  </main>
+  <aside>
+    <div class="kuvat">
+      <img src="./assets/img/flex.png" alt="kuva pelistä, jossa harjoitellaan flexboxin käyttöä" style="width:100%">
+      <p>
+        Opettelimme Flexboxin käyttöä pelaamalla Flexbox froggy -peliä. Tämä auttoi ymmärtämään Flexboxin perusperiaatteita paremmin.
+      </p>
+      <img src="./assets/img/puuro1.png" alt="kuva kaurapuurosta" style="width:40%">
+      <img src="./assets/img/puuro2.png" alt="kuva kaurapuurosta" style="width:40%">
+      <p>
+        Otin kuvia puurolautasista, jotta saisin materiaalia planeettoihin.
+      </p>
+      <img src="./assets/img/visu.png" alt="kuva, jossa on avaruus ja planeettoja" style="width:100%">
+      <img src="./assets/img/testailua1.png" alt="kuva, jossa on avaruus ja planeettoja" style="width:100%">
+      <p>
+        Suunnittelin illustratorilla, miltä sivusto voisi näyttää. Tämä on vasta alustavaa, mutta se antoi jonkin lähtöpisteen. Koodasin myös jotain alustavaa harjoituksen vuoksi.
+      </p>
+    </div>
+  </aside>
+
+  <footer>
+    <nav>
+        <a class="link" href="viikko2.html">← Edellinen viikko</a> |
+        <a class="link" href="viikko4.html">Seuraava viikko →</a>
+      </nav>
+  </footer>
+
+</div>
+</body>
+</html>
