@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppimispäiväkirja - viikko 4</title>
+    <style>
+
+* {
+      box-sizing: border-box;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #715fe6;
+            color: antiquewhite;
+            overflow-y: scroll;
+        }
+
+        header {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .laatikko 
+        {
+            border-radius: 0px;
+            border: 1px solid #e3e6df;
+            width: 90vw;
+            padding: 20px;
+            margin: 0%;
+        
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            margin
+            border: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 10px;
+        }
+
+        .image-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .left img {
+            margin-top: 90px;
+        }
+
+        .right img {
+            margin-top: 160px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sisältö {
+            flex: 2;
+            max-width: 60%;
+            padding: 0 20px;
+            text-align:left;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer nav {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blanchedalmond;
+        }
+
+        .link {
+            color: #e0e3a0;
+        }
+
+        a {
+            color: #e0e3a0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="laatikko">
+        <h1>VIIKKO 4</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="image-box left">
+            <img src="./assets/img/tehtava3.png" alt="näyttökuva codepenistä">
+            <img src="./assets/img/tehtava4.png" alt="näyttökuva codepenistä">
+            <p>
+                Näyttökuvia codepenin koodeista, joita hyödynsin sivustolla. Muokkasin koodia edelleen sopimaan sivustooni.
+            </p>
+        </div>
+        <div class="sisältö">
+            <p>
+                Tällä viikolla käsittelimme mm. sivujen responsiivisuutta, kuten media query -ominaisuutta, fonttien ja @font-face –elementin käyttöä sekä hover-ominaisuuksia. Lisäksi opettelimme, miten favicon lisätään sivulle.
+            </p>
+            <p>
+                Käytin tällä viikolla paljon aikaa 2. tehtävän parissa. Löysin Codepenistä koodin, jossa tähdet liikkuvat nopeasti kohti katsojaa. Muokkasin koodia niin, että tähtiä oli enemmän ja ne liikkuivat eri tahtiin laajemmalla alueella. Tämä vei paljon aikaa. Huomaan, että koodaaminen on usein aikaa vievää – aina ilmenee uusia ongelmia, ja jotain täytyy jatkuvasti muuttaa. Olen pyytänyt tekoälyltä apua, mikä on nopeuttanut työtä, mutta yllättävän usein se ei ratkaise ongelmia toivomallani tavalla tai en osaa ilmaista ongelmiani riittävän selkeästi. Löysin myös Codepenistä pyörivän pallon, jota muokkasin niin, että sain sivulle pyörivät kiertoradat. Suurensin niiden kokoa ja siirsin niitä sopiviin paikkoihin. Lopulta olin tyytyväinen lopputulokseen. Seuraavaksi löysin koodin, jossa planeetat pyörivät, ja niihin voi liittää oman kuvan planeetan pinnaksi. Muokkasin ottamiani kuvia niin, että ne sopivat planeettojen pinnoiksi, ja pienensin kuvien tiedostokokoa. Lisäsin planeetoille myös varjoja, jotta ne näyttäisivät kolmiulotteisemmilta.
+            </p>
+            <p>
+                Seuraavaksi aloin yhdistellä näitä elementtejä samaan HTML-tiedostoon. Olin luonut tähdille ja kiertoradoille omat tyylitiedostot. Elementtien yhdistäminen oli yllättävän haastavaa ja aikaa vievää, mutta sain sen lopulta toimimaan.
+            </p>
+            <p>
+                Torstaina lisäsin koodiin JavaScriptin avulla tekstibokseja, jotka ilmestyvät, kun planeettaa klikkaa. Tämä vei koko päivän. Viikon aikana etsin myös sopivia fontteja, mutta niiden löytäminen sivustolle oli haastavaa. Jatkan vielä sopivan fontin etsintää. Tein myös kokeiluja siitä, miten saisin normaalista kuvasta “pikselitaiteen” näköisen - sain sen tehtyä illustratorissa.
+            </p>
+            <p>
+                Käytin myös aikaa parantaakseni sivuston responsiivisuutta. Muutin mittayksiköitä ja yritin järjestää planeetat grid-asetteluun. Käytin tähän koko illan, mutta en saanut sitä toimimaan, vaikka kysyin apua tekoälyltä. Lopulta päätin hyödyntää media query -ominaisuutta, jotta planeetat pienenevät tietyssä pikselikoossa.
+            </p>
+            <p>
+                Tällä viikolla opin, kuinka koodaaminen on sekä palkitsevaa että haastavaa. Ongelmanratkaisu on ehdottomasti yksi koodaamisen mielekkäimmistä puolista. On todella tyydyttävää, kun onnistuu löytämään ratkaisun ja saa jonkin asian toimimaan juuri niin kuin on suunnitellut. Toisaalta, turhautuminen kasvaa nopeasti, jos ongelma ei ratkea, vaikka kuinka yrittäisi erilaisia lähestymistapoja. Erityisesti aloittelijana huomaan, että koodin kanssa työskentely vie paljon aikaa ja vaatii kärsivällisyyttä.
+            </p>
+            <p>
+                Tunsin kuitenkin onnistumisen iloa, kun sain esimerkiksi tekstiboksit toimimaan haluamallani tavalla.  Olen myös tyytyväinen siihen, miltä sivu näyttää tällä hetkellä.  Mielestäni olen onnistunut tulkitsemaan arkistokuvaa, joka oli inspiraationa. Sivulla on samoja elementtejä mutta koodattuna ja animoituna. Sivu on omasta mielestäni visuaalisesti hienompi kuin osasin alun perin odottaa, ja olen tyytyväinen että olen kokeillut ja testaillut eri juttuja vaikka se onkin vienyt paljon aikaa.
+            </p>
+        </div>
+        <div class="image-box right">
+            <img src="./assets/img/tehtava1.png" alt="avaruus, jossa on planeettoja">
+            
+            <img src="./assets/img/tehtava2.png" alt="avaruus, jossa on planeettoja">
+            <p>
+            Näyttökuvia sivustosta tämän viikon jälkeen.
+            </p>
+    
+            <img src="./assets/img/avaruus1.jpg" alt="avaruus, jossa on planeettoja">
+            <p>
+                Arkistokuva, joka toimii inspiraationa sivulle.
+            </p>
+        
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <a class="link" href="viikko3.html">← Edellinen viikko</a> |
+            <a class="link" href="viikko5.html">Seuraava viikko →</a>
+        </nav>
+    </footer>
+</body>
+</html>
