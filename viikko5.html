@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+    <title>Oppimispäiväkirja - viikko 5</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:rgb(18, 18, 32);
+            color: antiquewhite;
+            overflow-y: scroll;
+        }
+
+        header {
+            margin-top: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            border: 5px;
+            text-align: right;
+            padding-right: 120px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 10px;
+            margin: 0 auto;
+        }
+
+        .sisältö {
+            flex: 2;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .image-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            justify-content: flex-start;
+            margin-left: 20px; 
+        }
+
+        .image-column img {
+            width: 300px; 
+            height: auto;
+            margin-bottom: 20px; 
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer nav {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blanchedalmond;
+        }
+
+        .link {
+            color: #e0e3a0;
+        }
+
+        a {
+            color: #e0e3a0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .koodiesimerkki {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px;
+            margin: 30px;
+        }
+        
+        .ekakuva {
+        transform: rotate(90deg);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="laatikko">
+        <h1>VIIKKO 5</h1>
+        
+        </div>
+    </header>
+    <div class="container">
+        <div class="sisältö">
+            <p>
+                Tällä viikolla keskityin julisteen tekemiseen. Tämä projekti oli minulle jostain syystä haastava. Käytin monta päivää erilaisten elementtien testailuun (mikä oli toki tehtävän tarkoituskin), mutta turhauduin, kun en ollut tyytyväinen lopputuloksiin. Minusta tuntui jatkuvasti, etten ymmärtänyt koodaamista tarpeeksi hyvin tehdäkseni sillä kiinnostavia asioita. Lisäksi turhauduin siihen, miten hankalaa yksinkertaisten asioiden tekeminen koodilla oli – jos halusin esim. kopioida elementin, piti kopioida ja siirtää monta riviä koodia.
+            </p>
+            <p>
+                Kiinnostuin lopulta viivamaisesta gradientista ja sen kerrostamisesta. Kun lisäsin kerroksia ja siirsin niiden paikkaa – tuntui kuin olisin kutonut kangaspuilla mattoa. Kiinnostuin siitä, miten lopputulos alkoi näyttää “kudotulta”. Minun oli kuitenkin vaikea saada tähän kudottuun viivaan dynaamisuutta ja kerroksellisuutta. Meinasin jo aloittaa alusta. Lopulta päätin kuitenkin jatkaa ja lisätä paksumpia viivoja pystysuoraan, jotta julisteessa olisi vähän tilaa rauhoittua. Tällöin kiinnostuin kokeilemaan z-indeksiä enemmän, ja sitä miten pystyin lomittamaan elementtejä toistensa päälle kokeilemalla. Tämäkin tuntui käsityömäiseltä. 
+            </p>
+            <p>
+                Alun välivaiheissa kysyin apua tekoälyltä useamman kerran - mutta turhauduin sen vastauksiin nopeasti – joko se poisti koodista jotain tai lopputulos ei ollut sitä mitä halusin. Tässä “lopullisessa” kudosmaisessa versiossa en lopulta käyttänyt tekoälyä ollenkaan. Kaikki elementit sijoittelin ja kopioin ja muokkasin itse.  Lopullisessa versiossa on vähemmän elementtejä näkyvillä kuin matkan varrella koodissa oli, mutta päätin että tärkeämpää on luoda kiinnostava lopputulos kuin ympätä koodiin kaikki mitä teen.  
+            </p>
+            <p>
+                Vähän jännittää, että onko juliste tarpeeksi “outo”, mutta ainakin minusta tuntuu, että julisteen tekemisen prosessi oli tehtävän annon mukainen ja kokeellinen – aloin työstää ilman suunnitelmia ja annoin kokeilujen johdatella minua. Minusta on myös kiinnostava pohtia, että “mitä koodilla voi tehdä” ja tarkastella vastauksena koodilla kutomista? Lopputulos ei ole minulle tavanomainen, joten se tuntuu erilaiselta kuin normi työni. Tuntuu, että alussa kipuilin sen kanssa, että olisin halunnut lisätä orgaanisia muotoja ja aaltoilevaa liikettä koodiin- mutta en keksinyt hyvää tapaa tehdä tätä. Lopulta nojauduin koodin erilaiseen vahvuuteen, mikä teki tekemisestä jouhevampaa. 
+            </p>
+            
+            <div class="koodiesimerkki">
+                <h4>
+                  <a id="koodi">Koodi esimerkki</a>
+                </h4> 
+                <html-css-viewer preview>
+                  <template>
+                    <style>
+
+                      .ympyra-with-color-change {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, rgba(2,212,0,1) 0%, rgba(0,38,212,1) 49%, rgba(252,0,0,1) 84%);
+                        filter: hue-rotate(90deg);
+
+                      }  
+                      .ympyra-normal-color {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, rgba(2,212,0,1) 0%, rgba(0,38,212,1) 49%, rgba(252,0,0,1) 84%);
+                      } 
+
+                    </style>
+                    <p>
+                    
+                        <div class="ympyra-normal-color"></div>
+                        <div class="ympyra-with-color-change"></div>
+                        <p>Ylemmässä ympyrässä on filter hue-rotate, jonka avulla väriä pystyy muuttamaan.</p>
+                
+                    </p>
+                  </template>
+                </html-css-viewer>
+                </body>
+              </div>
+
+        </div>
+        <div class="image-column">
+            <img src="./assets/img/juliste1.png" alt="julisteen keskeneräinen versio">
+            <p>Aloitin työstämään julistetta testailemalla erilaisia asioita.</p>
+            <img src="./assets/img/juliste3.png" alt="julisteen keskeneräinen versio">
+            <p>Löysin kiinnostavan tavan luoda "viivoja" radientilla.</p>
+            <img src="./assets/img/juliste4.png" alt="julisteen keskeneräinen versio">
+            <img src="./assets/img/juliste5.png" alt="julisteen keskeneräinen versio">
+            <p>Yritin yhdistella erilaisia elementtejä, mutta en pitänyt lopputuloksista. Oli vaikea "täyttää" koko juliste elementeillä.</p>
+            <img src="./assets/img/juliste2.png" alt="julisteen keskeneräinen versio">
+            <p>Testaillessani huomasin, miten viiva gradientti näytti kiinnostavalta kerrostettuna. Kiinnostuin tästä ja aloin lisäilemaan läyereitä ja muokkaamaan radienttia</p>
+            <img src="./assets/img/juliste6.png" alt="julisteen keskeneräinen versio">
+            <p>Lopputulos sunnuntaina illalla 5 päivän työstön jälkeen.</p>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <nav>
+            <a class="link" href="viikko4.html">← Edellinen viikko</a> |
+            <a class="link" href="viikko6.html">Seuraava viikko →</a>
+        </nav>
+    </footer>
+</body>
+</html>
