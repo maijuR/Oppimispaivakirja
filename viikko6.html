@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Viikko 6 - Oppimispäiväkirja</title>
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+
+    <style> 
+    
+    @font-face {
+        font-family: 'Neurochrome';
+        src: url('./assets/fonts/Neurochrome-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+
+      body 
+      {
+            width:100%;
+            max-width: 100%;
+            margin: 0%;
+            animation: kradientti 5s linear infinite;
+            animation-direction: alternate-reverse;
+            font-family: Arial, Helvetica, sans-serif; color:aliceblue;
+            
+      }
+      * {
+            box-sizing: border-box;
+      }
+      .otsikko_alku
+      {
+            padding: 1px;
+            width: 100%;
+            overflow: hidden;
+            font-family: Neurochrome; color:aliceblue;
+            
+      }
+
+      @keyframes kradientti
+      {
+            0% {background-color: rgb(85, 4, 143);}
+            50% {background-color: rgb(61, 7, 73);}
+            100% {background-color: rgb(119, 10, 111);}
+      }
+
+      h1 
+      {
+            font-size: 4vw;
+            text-wrap: nowrap;
+      }
+
+      .animaatio 
+      {
+            transform:translateX(0px);
+            animation: liikkuminen 7s infinite;
+            animation-timing-function: linear;
+      }
+
+      @keyframes liikkuminen 
+      {
+            from {transform:translateX(-100%);}
+            to {transform:translateX(100%);}
+      }
+
+
+      .frame {
+            height:100%;
+            display:grid;
+            grid-template-columns:300px 1fr 300px;
+            grid-template-rows:10px 1fr 100px;  
+        }
+
+        .frame div.center {
+            overflow:auto;
+            padding:20px;
+            line-height:1.3;
+            border-radius: 25px;
+            border: 5px dashed #00f7ff;
+            padding: 20px;
+        }
+
+
+      .kuvat
+        {
+            border-radius: 5px;
+            border: 5px dashed #00f7ff;
+            padding: 20px;
+            margin: 10%;
+        }
+    
+      nav 
+      {
+        margin: 1%;
+        text-align: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+            color: #e0e3a0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+
+    </style>
+    </head>
+
+<body>
+    <div class= "otsikko_alku">
+    <div class="animaatio">
+    <h1>VIIKKO 6 VIIKKO 6 VIIKKO 6</h1>
+    </div>
+    </div>
+    
+    <div class="frame">
+        <div class="topleft corner"></div>
+        <div class="top"></div>
+        <div class="topright corner"></div>
+        
+        <div class="left"></div>
+        <div class="center">
+ 
+            <p>
+                Viimeisellä viikolla kävimme yhdessä läpi domainin hankintaa. Se osoittautui monimutkaisemmaksi kuin alun perin ajattelin, mutta koska aion ehkä tulevaisuudessa hankkia oman domainin, oli hyödyllistä saada kokonaiskuva prosessista. Muuten tällä viikolla työstin arkisto-tehtävää. Keskityin erityisesti sivuston responsiivisuuteen lisäämällä ja hienosäätämällä media query -elementtejä. Lisäksi muokkasin sivun narratiivia eli tekstisisältöä. Muutin myös kursorin ulkoasua vastaamaan paremmin sivulla olevaa tarinaa. Työstin sivuston fontteja siten, että ne olisivat helposti luettavia mutta silti visuaalisesti kiinnostavia. Pyrin myös optimoimaan sivuston latauskokoa entisestään. Yritin myös hioa sivustoa kokonaisuutena – vaikka tuntuu että asiaan kuuluu, että kaikki jutut eivät aina toimi tai jotain glitchejä löytyy.  
+            </p>
+            <p>
+                Torstai kului näyttelyn pystytyksessä. Autoin julisteiden ripustamisessa seinille ja niiden kiinnittämisessä tikkaiden avulla, missä riitti hommaa. Perjantaina kävimme läpi nettisivujamme. Oli todella hienoa nähdä muiden upeita töitä, ja pyrin antamaan jokaiselle kannustavaa palautetta. Oli mielenkiintoista huomata, kuinka erilaisia sivustoja kaikki olivat tehneet, ja kuinka jokainen oli selvästi panostanut täysillä. Oma sivustoni käsiteltiin viimeisenä, ja huomasin, että ihmisillä oli jo kiire lounaalle -ymmärrettävästi. Jäi hieman harmittamaan, sillä en saanut oikein kannustavaa palautetta. Tuli epävarma olo omasta sivustosta, varsinkin kun sivu lägäili. Harmitti kun tätä ei ollut tapahtunut työstövaiheessa kertaakaan, joten en osannut ajatella että se olisi ollut ongelma. Tähän pitää tulevaisuudessa tutustua siis lisää, mutta yritän ajatella, että en voinut tietää tätä riskiä, kun siitä ei ole ollut puhetta. Esittely ei tuntuntu omalta osalta onnistuneelta, mikä tuntui kurjalta, kun nettisivustoon oli käyttänyt tosi paljon aikaa ja eforttia. <a href="https://maijur.github.io/goldilockszone/" target="_blank" >Linkki arkisto-tehtävään.</a>
+            </p>  
+            <p>
+                Oli kuitenkin hienoa nähdä myös muiden ryhmien töitä näyttelyssä. En ollut nähnyt  Materia-kurssin töitä aiemmin ja ne olivat upeita. 
+            </p>     
+            <p>
+                Onnistuin kurssilla mielestäni tekemään parhaani kurssitehtävissä (vaikka niissä riittää vielä kehitettävää) ja koodin opettelussa. Yritin myös olla aktiivinen ja auttavainen. Haastavaa kurssilla oli se, miten paljon aikaa käytin tehtäviin - ei ihan toteutunut vapaa-ajan ja koulun tasapaino. Olisin voinut myös syventyä enemmän käyttämieni elementtien taustatietoihin ja vahvistaa jatkuvasti koodaamisen perusteita.  
+            </p>    
+            <p>
+                Kokonaisuutena kurssi oli mielestäni onnistunut. Haasteena kurssilla oli mielestäni se, että koodaamista on haastava opettaa ja aikaavievä toteuttaa. Onneksi kurssilla oli aikaa työstää projekteja itsenäisesti ja ongelmiin sai apua. 
+            </p>  
+        <div class="right"></div>
+            
+        <div class="bottomleft corner"></div>
+        <div class="bottom">
+
+            <div class="kuvat">
+                <img src="./assets/img/viikko6.png" alt="kuva, jossa valmistellaan näyttelyä" style="width:100%">
+        
+                <p>
+                Ripustettuja julisteita ja näyttelyvalmisteluja.
+                </p>
+        
+            </div>
+
+            <nav>
+                <a href="viikko5.html">← Edellinen viikko</a> |
+                <a href="index.html">Etusivu →</a>
+              </nav>
+        </div>
+        <div class="bottomright corner"></div>
+    </div>
+
+</body>
+</html>
